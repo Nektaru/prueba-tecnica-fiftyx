@@ -1,0 +1,361 @@
+
+.advise {
+    
+    padding: 0.75rem;
+    padding-right: 7rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(191, 190, 190);
+    background-color: black;
+    text-align: right;
+}
+
+.icon {
+    width: 15px;
+    height: 13px;
+    filter: invert(100%);
+}
+
+.support-language{
+    padding: 0.75rem;
+    padding-right: 7rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(228, 226, 226);
+    background-color: grey;
+    text-align: right;
+    justify-content: space-around;
+}
+
+.row-icon {
+    width: 20px;
+    height: 10px;
+    filter: invert(100%);
+}
+
+.slash {
+    padding-right: 1rem;
+    padding-left: 1.5rem;
+}
+
+.loggin {
+    padding-top: 0.75rem    ;
+    padding-right: 7rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: right;
+}
+
+.bag-icon {
+    width: 25px;
+    height: 25px;
+    padding-left: 20px;
+}
+
+.navbar {
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.row-icon-nav {
+    width: 20px;
+    height: 10px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px; 
+    object-fit: fill;
+    padding-right: 20px;
+}
+
+#nav li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    justify-content: center;
+}
+
+.image-pulsarbox {
+    width: 25%;
+    height: 25%;
+    padding: 4rem;
+    border-radius: 100px;
+    border: 1px solid rgb(175, 173, 173);
+    display: flex;
+}
+
+.text-info {
+    padding-left: 100px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.name{
+    font-size: 40px;
+    font-weight: bolder;
+    list-style-type: none;
+}
+
+.type {
+    font-size: 30px;
+    color: grey;
+    list-style-type: none;
+}
+
+.ul-text{
+    font-size: 25px;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+.ul-text li{
+    margin-bottom: 20px;
+}
+
+.more-info {
+    font-size: 20px;
+    color: rgb(62, 62, 62);
+    text-decoration: underline;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.2rem;
+    border-radius: 30px;
+    border: 1px solid rgb(175, 173, 173);
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.icon-info {
+    width: 20px;
+    height: 20px;
+    display: inline;
+}
+
+.box a{
+    margin-top: 15px;
+}
+
+.inner-border {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0.5rem 3rem;
+    border-radius: 80px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.color-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 30px;
+    border: 1px solid rgb(175, 173, 173);
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.color-circles {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.color-black {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin: 8px;
+    background: black;
+    border-radius: 50%;
+    border: 5px solid teal;
+    border-spacing: 2px;
+}
+
+.color-white {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin: 8px;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid gray;
+}
+
+.carset {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(87, 85, 85);
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.quantity {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-right: 80px;
+}
+
+.quantity-add {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 50px;
+    height: 10px;
+    padding: 5px;
+    margin: 8px;
+    background: white;
+    border: 2px solid gray;
+    padding-left: 10px;
+}
+
+.total {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.price {
+    padding-left: 10px;
+    font-size: 30px;
+    color: black;
+}
+
+.add-to-cart {
+    padding: 25px 35px;
+    font-size: 18px;
+    color: white;
+    background: rgb(17, 183, 169);
+    border-radius: 50px;
+}
+
+.under-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-miniature {
+    padding-right: 6rem;
+}
+
+.miniature {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid rgb(86, 86, 86);
+}
+
+.klarna {
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+    
+}
+
+.klarna-logo {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.klarna-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 20rem;
+    font-size: 18px;
+}
+
+.subtext {
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.buy-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+    padding-top: 2rem;
+}
+
+.buy-images {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    justify-content: space-evenly;
+    object-fit: cover;
+}
+
+.buy-image {
+    width: 400px;
+    border-image: fill;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 40px 40px 0 0;
+}
+
+.buy-image-block {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 40px;
+    padding-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-image-text {
+    padding-top: 50px;
+}
+
+.info-details {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-details-text {
+    padding-left: 40px;
+}
