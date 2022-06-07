@@ -71,6 +71,7 @@
     height: 100px; 
     object-fit: fill;
     padding-right: 20px;
+    padding-left: 20px;
 }
 
 #nav li {
@@ -87,13 +88,59 @@
     justify-content: center;
 }
 
-.image-pulsarbox {
-    width: 25%;
-    height: 25%;
-    padding: 4rem;
+
+.carousel-main {
+    width: 600px;
+    height: 600px;
     border-radius: 100px;
     border: 1px solid rgb(175, 173, 173);
     display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 1s ease-in-out;
+}
+
+.controls {
+    position: absolute;
+    top: 63%;
+    left: 21%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.prev-btn {
+    width: 40px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    right: 230px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid rgb(175, 173, 173);
+}
+
+.next-btn {
+    width: 40px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    left: 260px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid rgb(175, 173, 173);
 }
 
 .text-info {
@@ -193,8 +240,9 @@
     margin: 8px;
     background: black;
     border-radius: 50%;
-    border: 5px solid teal;
+    border: 1px solid black;
     border-spacing: 2px;
+    cursor: pointer;
 }
 
 .color-white {
@@ -204,7 +252,8 @@
     margin: 8px;
     background: white;
     border-radius: 50%;
-    border: 3px solid gray;
+    border: 1px black solid;
+    cursor: pointer;
 }
 
 .carset {
@@ -269,6 +318,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding-right: 20px;
 }
 
 .img-miniature {
@@ -361,14 +411,31 @@
 }
 
 
+
 @media screen and (max-width: 1250px) { 
     .container{
         padding: 1rem 1rem;
     }
-    .image-pulsarbox {
 
-        padding: 2rem;
+    .carousel-main {
+        width: 340px;
+        height: 300px;
     }
+
+    .prev-btn {
+        width: 30px;
+        height: 80px;
+        right: 180px;
+        top: 210px ;
+    }
+
+    .next-btn {
+        width: 30px;
+        height: 80px;
+        left: 40px;
+        top: 210px;
+    }
+
     .text-info {
         padding-left: 20px;
     }
@@ -418,11 +485,21 @@
         padding: 0.5rem 0.5rem;
     }
 
-    .image-pulsarbox {
-    
-            padding: 1rem;
-            margin-left: 20px;
+    .carousel-main {
+        width: 300px;
+        height: 280px;
     }
+
+    .prev-btn {
+        right: 160px;
+        top: -240px ;
+    }
+
+    .next-btn {
+        left: 70px;
+        top: -240px;
+    }
+
     .carset {
         padding-top: 25px;
         padding-left: 0px;
@@ -434,7 +511,7 @@
     }
 
     .text-info {
-        padding-left: 0px;
+        width: 540px;
     }
     .buy-image {
         width: 280px;
@@ -466,6 +543,30 @@
         font-size: 0.8rem;
     }
 
+    .container{
+        padding: 1rem 3rem;
+        flex-direction: column;
+    }
+
+    .carousel-main {
+        width: 500px;
+        height: 500px;
+    }
+
+    .prev-btn {
+        width: 40px;
+        height: 120px;
+        right: -10px;
+        top: -290px ;
+    }
+
+    .next-btn {
+        width: 40px;
+        height: 120px;
+        left: 390px;
+        top: -290px;
+    }
+
     .box-info {
         display: flex;
         flex-direction: row;
@@ -481,7 +582,7 @@
 
     .text-info {
         padding-left: 0px;
-        width: 550px;
+        width: 680px;
     }
 
     .add-to-cart {
@@ -520,11 +621,28 @@
         list-style-type: none;
     }
 
+    .text-info {
+        padding-left: 0px;
+        width: 600px;
+    }
+
+    .prev-btn {
+        right: 10px;
+        top: -200px ;
+    }
+
+    .next-btn {
+        left: 380px;
+        top: -200px;
+    }
+
+
     .ul-text{
         font-size: 15px;
         padding-left: 0px;
         padding-right: 20px;
     }
+
     .box {
         padding: 0.3rem;
         border-radius: 30px;
@@ -606,11 +724,26 @@
         flex-direction: column;
     }
 
-    .image-pulsarbox {
-        width: 70%;
-        height: 70%;
+    .carousel-main {
+        width: 300px;
+        height: 300px;
     }
-    
+
+
+    .prev-btn {
+        width: 30px;
+        height: 80px;
+        right: 20px;
+        top: -130px ;
+    }
+
+    .next-btn {
+        width: 30px;
+        height: 80px;
+        left: 200px;
+        top: -130px;
+    }
+
     .text-info {
         padding-left: 0px;
         width: 380px;
@@ -652,6 +785,7 @@
 
     .under-image {
         width: 374px;
+        padding-right: 0px;
     }
 
 
@@ -703,13 +837,78 @@
     
 }
 
+@media screen and (max-width: 393px) {
+    
+    .prev-btn {
+        right: 30px;
+        top: -80px ;
+    }
+
+    .next-btn {
+        left: 195px;
+        top: -80px;
+    }
+
+    .buy-image {
+        width: 290px;
+    }
+
+    
+}
 
 @media screen and (max-width: 380px) {
+    
+    .prev-btn {
+        right: 30px;
+        top: 20px ;
+    }
+
+    .next-btn {
+        left: 190px;
+        top: 20px;
+    }
+
     .navbar {
         font-size: 0.7rem;
     }
 
     .buy-image {
         width: 277px;
+    }
+
+    .under-image {
+        width: 368px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+    .prev-btn {
+        right: 35px;
+        top: -30px ;
+    }
+
+    .next-btn {
+        left: 185px;
+        top: -30px;
+    }
+
+    .text-info {
+        max-width: 338px;
+    }
+
+    .color-box {
+        padding: 1rem;
+        margin: 0.5rem auto;
+        font-size: 20px;
+        width: 180px;
+    }
+
+    .under-image {
+        width: 338px;
+    }
+
+    .carset {
+        max-width: 338px;
     }
 }

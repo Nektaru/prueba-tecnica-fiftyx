@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="landing.css">
     <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+    <script src="landing.js" defer></script> 
 <style>
 body {
     font-family: 'Heebo';font-size: 22px;
@@ -44,7 +45,18 @@ body {
         </ul>
     </div>
     <div class="container">
-        <img class="image-pulsarbox" src="./assets/img/Pulsar Plus.jpg" alt=""></img>
+        <main class="carousel-main">
+            <a class="carousel">
+                <img class="carousel-img" src="./assets/img/Pulsar Plus.jpg" alt=""></img>
+                <img class="carousel-img" src="./assets/img/wallbox pared.jpg" alt=""></img>
+                <img class="carousel-img" src="./assets/img/wallbox coche.jpg" alt=""></img>
+                <img class="carousel-img" src="./assets/img/wallbox components.jpg" alt=""></img>
+            </a>
+            <nav class="controls">
+                <button class="prev-btn"> < </button>
+                <button class="next-btn"> > </button>
+            </nav>
+        </main>
             <div class="text-info">
                 <ul>
                     <li class="name">Pulsar Plus</li>
